@@ -1,2 +1,8 @@
 # LinkedList-1
-This is my first assessment on linked list 
+
+void reversell( Node*head){
+if(head==NULL){
+return;}
+Node*x=reversell(head->next);
+x->next=head;
+return x;}
