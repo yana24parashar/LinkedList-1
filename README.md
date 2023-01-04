@@ -1,2 +1,10 @@
 # LinkedList-1
-This is my first assessment on linked list 
+Node*insertnode(Node*head , int data){
+	Node*temp=head;
+	
+Node*newNode=new Node(data);
+head=newnode;
+head->next=temp->next;
+return head;
+
+}
